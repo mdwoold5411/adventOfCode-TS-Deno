@@ -1,0 +1,24 @@
+{
+  "tasks": {
+    "exec": "deno run --allow-read src/main.ts",
+    "debug": "deno bench tests/"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  },
+  "lint": {
+    "files": {
+      "include": ["src/**/*.ts", "tests/*.ts"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": ["src/**/*.ts", "tests/*.ts"]
+    }
+  },
+  "permissions": {
+    "read": [
+      "./input/*.txt"
+    ]
+  }
+}
